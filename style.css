@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap");
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: "Roboto", sans-serif;
+}
+
+.container {
+ background-color: #fff;
+ width: 95%;
+ margin: 0 auto;
+}
+
+.container .market-view {
+ width: 100%;
+ margin: 5% 0 2% 0;
+}
+.container .market-view h5 {
+ color: #726e6e;
+ font-size: calc(10px + (12 - 10) * ((100vw - 300px) / (1600 -300)));
+
+ font-weight: 400;
+ letter-spacing: 0.2rem;
+ margin-bottom: 10px;
+}
+.container .market-view h6 {
+ color: #b3b3b3;
+ font-size: 0.75rem;
+ font-weight: 400;
+ margin: 20px 0 0 0;
+}
+.container .market-view h1 {
+ color: rgb(24, 23, 23);
+ font-size: calc(24px + (40 - 24) * ((100vw - 300px) / (1600 -300)));
+ font-weight: 600;
+ margin-bottom: 40px;
+}
+.container .market-view .market-content {
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-items: center;
+}
+.container .market-view .market-content .brief-box {
+ width: 120px;
+ height: 200px;
+ background-color: #fafafaef;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ margin-bottom: 20px;
+ margin-right: 5px;
+}
+.container .market-view .market-content .brief-box .description {
+ margin: 15px;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+}
+.container .market-view .market-content .brief-box .description h3 {
+ font-size: 1rem;
+ color: rgb(94, 93, 93);
+ font-weight: 600;
+ width: 100%;
+}
+.container .market-view .market-content .brief-box .description p {
+ font-size: 0.8rem;
+ color: #b3b3b3;
+ font-weight: 600;
+ width: 100%;
+}
+.container .market-view .market-content .brief-box .stat {
+ margin: 12px;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ align-items: flex-end;
+}
+.container .market-view .market-content .brief-box .stat h2 {
+ font-size: 1rem;
+ color: rgb(94, 93, 93);
+ font-weight: 600;
+}
+.container .market-view .market-content .brief-box .stat h4 {
+ font-size: 0.8rem;
+ color: #b3b3b3;
+ font-weight: 400;
+}
+.container .sector-watchlist {
+ width: 100%;
+ margin: 0;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+.container .sector-watchlist .sector {
+ width: 65%;
+ margin: 0;
+ display: flex;
+ flex-direction: column;
+ border-top: 1px solid #ebe9e9;
+ margin-right: 2%;
+}
+.container .sector-watchlist .sector .highlight {
+ width: 100%;
+ margin: 0 0 40px 0;
+}
+.container .sector-watchlist .sector .highlight h2 {
+ color: rgb(24, 23, 23);
+ font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 -300)));
+ font-weight: 600;
+ margin-top: 10px;
+}
+.container .sector-watchlist .sector .highlight p {
+ font-size: 0.8rem;
+ color: #b3b3b3;
+ font-weight: 300;
+ margin-bottom: 30px;
+}
+.container .sector-watchlist .sector .highlight .sectors {
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+.container .sector-watchlist .sector .highlight .sectors .sec {
+ width: 49%;
+ display: flex;
+ flex-direction: column;
+ background: url(./images/bud.jpg);
+ height: 100px;
+ border-radius: 4px;
+}
+.container .sector-watchlist .sector .highlight .sectors .sec .description {
+ margin: 10px;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ color: #fff;
+}
+.container .sector-watchlist .sector .highlight .sectors .sec .description h3 {
+ color: #fff;
+}
+.container .sector-watchlist .sector .highlight .sectors .sec .stat {
+ margin: 20px;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ align-items: flex-end;
+}
+.container .sector-watchlist .sector .highlight .sectors .sec .stat p {
+ width: fit-content;
+ padding: 5px 8px;
+ border-radius: 5px;
+ background-color: rgb(84, 165, 67);
+}
+.container .sector-watchlist .sector .dividends {
+ width: 100%;
+ margin: 0 0 30px 0;
+ border-top: 1px solid #ebe9e9;
+}
+.container .sector-watchlist .sector .dividends h2 {
+ color: rgb(24, 23, 23);
+ font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 -300)));
+ font-weight: 600;
+ margin-top: 10px;
+}
+.container .sector-watchlist .sector .dividends table {
+ font-size: 0.8rem;
+ color: #929090;
+ font-weight: 300;
+ margin-bottom: 10px;
+ width: 100%;
+}
+.container .sector-watchlist .sector .dividends table tr {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ width: 100%;
+ border-bottom: 1px solid #ebe9e9;
+ padding: 10px 0;
+}
+.container .sector-watchlist .sector .dividends p {
+ font-size: 0.8rem;
+ color: #929090;
+ font-weight: 300;
+ margin-bottom: 30px;
+ width: 100%;
+}
+
+.container .sector-watchlist .sector .dividends table tr td {
+ margin-top: 10px;
+}
+
+/* sort out the table */
+
+.container .sector-watchlist .watchlist {
+ width: 30%;
+ padding: 15px 20px 15px 15px;
+ 
+ border-radius: 10px;
+ box-shadow: 1px 1px  rgb(218, 218, 218);
+ height: fit-content;
+}
+.container .sector-watchlist .watchlist h2 {
+ color: rgb(24, 23, 23);
+ font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 -300)));
+ font-weight: 600;
+ margin-bottom: 20px;
+}
+.container .sector-watchlist .watchlist p {
+ width: 95%;
+ color: #000;
+ font-size: 0.9rem;
+ font-weight: 300;
+ margin-bottom: 20px;
+ font-style: italic;
+}
+.container .earnings {
+ width: 100%;
+ border-top: 1px solid #ebe9e9;
+ margin-bottom: 40px;
+}
+.container .earnings h2 {
+ color: rgb(24, 23, 23);
+ font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 -300)));
+ font-weight: 600;
+ margin-top: 10px;
+}
+.container .earnings table {
+ color: #929090;
+ font-size: 0.8rem;
+ font-weight: 200;
+ width: 100%;
+}
+.container .earnings table tr {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ width: 100%;
+ margin: 20px 0;
+ border-bottom: 1px solid #ebe9e9;
+ padding-bottom: 10px;
+}
+.container .performance {
+ width: 100%;
+ border-top: 1px solid #ebe9e9;
+}
+.container .performance h2 {
+ color: rgb(24, 23, 23);
+ font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 -300)));
+ font-weight: 600;
+ margin-top: 10px;
+}
+.container .performance p {
+ font-size: 0.8rem;
+ color: #b3b3b3;
+ font-weight: 300;
+ margin-bottom: 30px;
+}
+.container .performance .content {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+.container .performance .content .secs {
+ width: 300px;
+ display: flex;
+ flex-direction: column;
+ background: url(./images/bud.jpg);
+ height: 100px;
+ border-radius: 4px;
+ margin: 10px 0;
+}
+.container .performance .content .secs .description {
+ margin: 10px;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ color: #fff;
+}
+.container .performance .content .secs .description h3 {
+ font-size: 0.8rem;
+ font-weight: 100;
+}
+.container .performance .content .secs .stat {
+ margin: 30px;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ align-items: flex-end;
+}
+.container .performance .content .secs .stat p {
+ width: fit-content;
+ padding: 5px 8px;
+ border-radius: 5px;
+ background-color: rgb(84, 165, 67);
+}
+
+/* Page 3 styles */
+.contain {
+ background-color: #fff;
+ width: 95%;
+ margin: 5% auto;
+}
+.contain h2 {
+ font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 -300)));
+ color: rgb(94, 93, 93);
+ font-weight: 600;
+}
+.contain .content {
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+}
+
+.contain .content .data {
+ display: flex;
+ flex-direction: row;
+ margin-top: 2%;
+}
+.contain .content .data .image {
+ width: 35%;
+ height: 200px;
+ background: url(./images/Industrials.jpg);
+ margin-right: 2%;
+}
+.contain .content .data .details {
+ width: 58%;
+ height: 200px;
+ display: flex;
+ flex-direction: column;
+}
+.contain .content .data .details .date,
+.contain .content .data .details .header,
+.contain .content .data .details .narration {
+ margin-bottom: 12px;
+}
+
+.contain .content .data .details p {
+ font-size: calc(8px + (16 - 8) * ((100vw - 300px) / (1600 -300)));
+ color: #b3b3b3;
+ font-weight: 300;
+}
+.contain .content .data .details h2 {
+ font-size: calc(16px + (24 - 16) * ((100vw - 300px) / (1600 -300)));
+ color: rgb(14, 13, 13);
+ font-weight: 600;
+}
+.contain .content .data .details h4 {
+ font-size: calc(10px + (20 - 10) * ((100vw - 300px) / (1600 -300)));
+ color: rgb(14, 13, 13);
+ font-weight: 300;
+ line-height: 1.2rem;
+}
+.contain .content .data .details .related {
+ display: flex;
+ flex-direction: row;
+}
+.contain .content .data .details .related p {
+ margin-right: 10px;
+}
+.contain .content .data .details .related h6 {
+ margin-right: 10px;
+}
+
+
+
+@media only screen and (max-width:600px) {
+    .container .sector-watchlist .sector .highlight .sectors {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+       }
+    .container .sector-watchlist .sector .highlight .sectors .sec {
+        width: 100%;
+       margin: 10px;
+    }
+    .contain .content .data {
+        
+        flex-direction: column;
+        
+    }
+    .contain .content .data .image {
+        width: 100%;
+     
+       }
+       .contain .content .data .details {
+        width: 100%;
+      
+    }
+    .contain .content .data .details p {
+      margin-top: 10px;
+       }
+       .contain .content .data .details .related p {
+        margin-top: 0;
+       }
+ 
+
+@media only screen and (max-width:500px) {
+    .container .sector-watchlist{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+       }
+    .container .sector-watchlist .sector, 
+    .container .sector-watchlist .watchlist{
+        width: 100%;
+    }
+    
+}
+}
