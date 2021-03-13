@@ -8,8 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap" rel="stylesheet">
     <title>Chaka Page 1</title>
     <script src="home.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
         
       axios
@@ -18,7 +17,7 @@
           console.log(response.data);
         })
         .catch(error => console.error(error));
-    </script>
+    </script> -->
 </head>
 <body>
     <div class="container">
@@ -135,9 +134,9 @@
                     <h2>Sector Highlights</h2>
                     <p>Dec 29 2020, 09:10:28pm</p>
                     <div class="sectors">
-                        <div class="sec">
+                        <!-- <div class="sec">
                             <div class="description">
-                                <h3 id="name">Health Care</h3>
+                                <h3 id="industryName">Health Care</h3>
                             </div>
                             <div class="stat">
                                 <p id="stat">+0.46%</p>
@@ -145,12 +144,12 @@
                         </div>
                         <div class="sec">
                             <div class="description">
-                                <h3>Industrial</h3>
+                                <h3 id="industryName">Industrial</h3>
                             </div>
                             <div class="stat">
                                 <p>-0.78%</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="dividends">
@@ -198,225 +197,8 @@
             <h2>Sector Performance</h2>
             <p>Dec. 29 2020, 09:10:36pm</p>
             <div class="content">
-                <div class="secs">
-                    <div class="description">
-                        <h3>Health Care</h3>
-                    </div>
-                    <div class="stat">
-                        <p>+0.46%</p>
-                    </div>
-                </div>
-                <div class="secs">
-                    <div class="description">
-                        <h3>Communication Services</h3>
-                    </div>
-                    <div class="stat">
-                        <p>0.00%</p>
-                    </div>
-                </div>
-                <div class="secs">
-                    <div class="description">
-                        <h3>Utilities</h3>
-                    </div>
-                    <div class="stat">
-                        <p>-0.07%</p>
-                    </div>
-                </div>
-                <div class="secs">
-                    <div class="description">
-                        <h3>Consumer Discretionary</h3>
-                    </div>
-                    <div class="stat">
-                        <p>-0.07%</p>
-                    </div>
-                </div>
-                <div class="secs">
-                    <div class="description">
-                        <h3>Financials</h3>
-                    </div>
-                    <div class="stat">
-                        <p>-0.33%</p>
-                    </div>
-                </div>
-                <div class="secs">
-                    <div class="description">
-                        <h3>Consumer Staples</h3>
-                    </div>
-                    <div class="stat">
-                        <p>-0.38%</p>
-                    </div>
-                </div>
-                <div class="secs">
-                    <div class="description">
-                        <h3>Materials</h3>
-                    </div>
-                    <div class="stat">
-                        <p>-0.42%</p>
-                    </div>
-                </div>
-                <div class="secs">
-                    <div class="description">
-                        <h3>Technology</h3>
-                    </div>
-                    <div class="stat">
-                        <p>-0.51%</p>
-                    </div>
-                </div>
-                <div class="secs">
-                    <div class="description">
-                        <h3>Real Estate</h3>
-                    </div>
-                    <div class="stat">
-                        <p>-0.55%</p>
-                    </div>
-                </div>
-                <div class="secs">
-                    <div class="description">
-                        <h3>Energy</h3>
-                    </div>
-                    <div class="stat">
-                        <p>-0.55%</p>
-                    </div>
-                </div>
-                <div class="secs">
-                    <div class="description">
-                        <h3>Industrial</h3>
-                    </div>
-                    <div class="stat">
-                        <p>-0.78%</p>
-                    </div>
-                </div>
+               
             </div>
-        </div>
-    </div>
-    <div class="contain">
-        <h2>News</h2>
-        <div class="content">
-        <div class="data">
-            <div class="image">
-                <img src="" alt="">
-            </div>
-            <div class="details">
-                <div class="date">
-                    <p>06/12/2020, 15:42:23 | Fintech Zoom</p>
-                </div>
-                <div class="header">
-                    <h2>Bionano Genomics'(NASDAQ:BNGO) Share price Is Down 55% Over The Previous Yr.</h2>
-                </div>
-                <div class="narration">
-                    <h4>Bionano Genomics'(NASDAQ:BNGO) Share price Is Down 55% Over The Previous Yr. -</h4>
-                </div>
-                <div class="related">
-                    <p>Related:</p>
-                    <h6> BNGO</h6>
-                </div>
-            </div>
-        </div>
-        <div class="data">
-            <div class="image">
-                <img src="" alt="">
-            </div>
-            <div class="details">
-                <div class="date">
-                    <p>02/10/2020, 17:00:04 | Yahoo Zoom</p>
-                </div>
-                <div class="header">
-                    <h2>Bionano Genomics, Inc.(BNGO) Upgraded to Buy: What Does It Mean for the Stock?</h2>
-                </div>
-                <div class="narration">
-                    <h4>Bionano Genomics, Inc.(BNGO) has been upgraded to a Zacks Rank 2 (Buy), reflecting growing optimism about the company's earnings prospects. This might drive the sto...</h4>
-                </div>
-                    <div class="related">
-                    <p>Related:</p>
-                    <h6> BNGOW</h6>
-                    <h6> BNGO</h6>
-                </div>
-            </div>
-        </div>
-        <div class="data">
-            <div class="image">
-                <img src="" alt="">
-            </div>
-            <div class="details">
-                <div class="date">
-                    <p>02/10/2020, 17:00:04 | Yahoo Zoom</p>
-                </div>
-                <div class="header">
-                    <h2>Bionano Genomics, Inc.(BNGO) Upgraded to Buy: Here's Why</h2>
-                </div>
-                <div class="narration">
-                    <h4>Bionano Genomics, Inc.(BNGO) might move higher on growing optimism about its earnings prospects, which is reflected by its upgrade to a Zacks Rank (2) Buy.</h4>
-                </div>
-                <div class="related">
-                    <p>Related:</p>
-                    <h6> BNGOW</h6>
-                    <h6> BNGO</h6>
-                </div>
-            </div>
-        </div>
-        <div class="data">
-            <div class="image">
-                <img src="" alt="">
-            </div>
-            <div class="details">
-                <div class="date">
-                    <p>13/08/2020, 22:09:02 | MarketScreener</p>
-                </div>
-                <div class="header">
-                    <h2>Bionano Genomics Reports Second Quater 2020 Financial Results and Provides Business Update | MarketScreener</h2>
-                </div>
-                <div class="narration">
-                    <h4>SAN DIEGO, Aug 13, 2020 -- Bionano Genomics, Inc. , a life science instrumentation company that develops and markets saphyr@, a platform for ultra-sensitive and ul... </h4>
-                </div>
-                <div class="related">
-                    <p>Related:</p>
-                    <h6> BNGOW</h6>
-                    <h6> BNGO</h6>
-                </div>
-            </div>
-        </div>
-        <div class="data">
-            <div class="image">
-                <img src="" alt="">
-            </div>
-            <div class="details">
-                <div class="date">
-                    <p>13/08/2020, 18:08:00 | Benzinga</p>
-                </div>
-                <div class="header">
-                    <h2>Bionano Genomics Reports Second Quater 2020 Financial Results and Provides Business Update</h2>
-                </div>
-                <div class="narration">
-                    <h4>SAN DIEGO, Aug 13, 2020 (GLOBE NEWSWIRE)-- Bionano Genomics, Inc. (NASDAQ:BNGO), a life science instrumentation company that develops and markets saphyr@, a platform for ultra-sensitive and ul... </h4>
-                </div>
-                <div class="related">
-                    <p>Related:</p>
-                    <h6> BNGOW</h6>
-                    <h6> BNGO</h6>
-                </div>
-            </div>
-        </div>
-        <div class="data">
-            <div class="image">
-                <img src="" alt="">
-            </div>
-            <div class="details">
-                <div class="date">
-                    <p>07/08/2020, 16:36:00 | PR Newswire</p>
-                </div>
-                <div class="header">
-                    <h2>Think About buying stock in BioNano Genomics, Conduent Inc, OpGen Inc, Uber Technologies, or MGM Resorts</h2>
-                </div>
-                <div class="narration">
-                    <h4>NEW YORK, AUg. 7, 2020 /PRNewswire/ -- InestorsObserver issues critical PriceWatch Alerts for BNGO, CNDT, OPGN, UBER, and MGM. To see how InvestorsObserver's propri...</h4>
-                </div>
-                <div class="related">
-                    <p>Related:</p>
-                    <h6>BNGOW</h6>
-                    <h6>BNGO</h6>
-                </div>
-            </div>
-        </div>
         </div>
     </div>
 </body>

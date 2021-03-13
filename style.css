@@ -133,32 +133,53 @@ body {
  width: 49%;
  display: flex;
  flex-direction: column;
- background: url(./images/bud.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
  height: 100px;
  border-radius: 4px;
+ margin: 10px 0;
+ justify-content: space-between;
+ position: relative;
 }
+.container .sector-watchlist .sector .highlight .sectors .sec::after {
+    content: "";
+    display: block;
+   background-color:#000;
+   opacity: .4;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   }
 .container .sector-watchlist .sector .highlight .sectors .sec .description {
  margin: 10px;
  display: flex;
  flex-direction: column;
  flex-wrap: wrap;
  color: #fff;
+ z-index: 100;
 }
 .container .sector-watchlist .sector .highlight .sectors .sec .description h3 {
- color: #fff;
+    font-size: 0.8rem;
+    font-weight: 100;
+    width: 40%;
+    line-height: 1.2rem;
 }
 .container .sector-watchlist .sector .highlight .sectors .sec .stat {
- margin: 20px;
- display: flex;
- flex-direction: column;
- flex-wrap: wrap;
- align-items: flex-end;
+    margin: 0 20px 20px 0;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    z-index: 100;
 }
 .container .sector-watchlist .sector .highlight .sectors .sec .stat p {
- width: fit-content;
- padding: 5px 8px;
- border-radius: 5px;
- background-color: rgb(84, 165, 67);
+    width: fit-content;
+    margin-bottom: 0;
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgb(84, 165, 67);
 }
 .container .sector-watchlist .sector .dividends {
  width: 100%;
@@ -274,33 +295,53 @@ body {
  width: 300px;
  display: flex;
  flex-direction: column;
- background: url(./images/bud.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
  height: 100px;
  border-radius: 4px;
  margin: 10px 0;
+ justify-content: space-between;
+ position: relative;
 }
+.container .performance .content .secs::after {
+    content: "";
+    display: block;
+   background-color:#000;
+   opacity: .4;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   }
 .container .performance .content .secs .description {
  margin: 10px;
+ height: fit-content;
  display: flex;
  flex-direction: column;
  flex-wrap: wrap;
  color: #fff;
+ z-index: 100;
 }
 .container .performance .content .secs .description h3 {
  font-size: 0.8rem;
  font-weight: 100;
+ width: 40%;
+ line-height: 1.2rem;
 }
 .container .performance .content .secs .stat {
- margin: 30px;
+ margin: 0 20px 20px 0;
+ height: fit-content;
  display: flex;
  flex-direction: column;
  flex-wrap: wrap;
  align-items: flex-end;
+ z-index: 100;
 }
 .container .performance .content .secs .stat p {
  width: fit-content;
+ margin-bottom: 0;
  padding: 5px 8px;
  border-radius: 5px;
+ color: #fff;
  background-color: rgb(84, 165, 67);
 }
 
@@ -308,7 +349,7 @@ body {
 .contain {
  background-color: #fff;
  width: 95%;
- margin: 5% auto;
+ margin: 2% auto;
 }
 .contain h2 {
  font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 -300)));
