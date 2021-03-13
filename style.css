@@ -219,7 +219,7 @@ body {
  margin-top: 10px;
 }
 
-/* sort out the table */
+
 
 .container .sector-watchlist .watchlist {
  width: 30%;
@@ -349,7 +349,7 @@ body {
 .contain {
  background-color: #fff;
  width: 95%;
- margin: 2% auto;
+ margin: 10% auto;
 }
 .contain h2 {
  font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 -300)));
@@ -370,7 +370,8 @@ body {
 .contain .content .data .image {
  width: 35%;
  height: 200px;
- background: url(./images/Industrials.jpg);
+background-size: 100% 100%;
+background-repeat: no-repeat;
  margin-right: 2%;
 }
 .contain .content .data .details {
